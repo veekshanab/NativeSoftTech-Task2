@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Banking Application</title>
+    <link rel="stylesheet" href="SimpleBankingApplication.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <span class="navbar-brand">Banking App</span>
+    </nav>
+
+    <!-- Main content container -->
+    <div class="main-container">
+        <div class="banking-header">
+            <h1>Simple Banking Application</h1>
+        </div>
+
+        <!-- Banking Actions -->
+        <div class="banking-actions">
+            <div class="action-container">
+                <h2>Create Account</h2>
+                <img src="https://static.vecteezy.com/system/resources/previews/015/277/508/original/create-new-account-sign-up-concept-illustration-flat-design-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-vector.jpg" width="200px" alt="">
+                <button onclick="createAccount()">Create Account</button>
+            </div>
+            <div>
+                <img src="https://thumbs.dreamstime.com/z/banking-operations-concept-vector-illustration-finance-services-financial-transaction-e-commerce-payment-main-processing-easy-155177174.jpg" width="500px">
+            </div>
+            <div class="action-container">
+                <h2>Deposit Money</h2>
+                <img src="https://www.interest.co.nz/sites/default/files/feature_images/Deposits_1_0_0.jpg" width="350px" alt="">
+                <input type="number" id="depositAmount" placeholder="Enter amount to deposit" />
+                <button onclick="depositMoney()">Deposit</button>
+            </div>
+
+            <div class="action-container">
+                <h2>Withdraw Money</h2>
+                <img src="https://pluang-production-financial-content.s3.ap-southeast-1.amazonaws.com/production/2022/12/lbev3z9oz8djgypujv%3AWITHDRAW_ARTICLE.jpg" width="450px">
+                <input type="number" id="withdrawAmount" placeholder="Enter amount to withdraw" />
+                <button onclick="withdrawMoney()">Withdraw</button>
+            </div>
+
+            <div class="action-container">
+                <h2>Check Balance</h2>
+                <button onclick="checkBalance()">Check Balance</button>
+            </div>
+        </div>
+
+        <!-- Account Info Section -->
+        <div class="account-info">
+            <h2>Your Account Info</h2>
+            <img src="https://th.bing.com/th/id/OIP.lnKhwP-50ql7a1287m1ZmwHaHa?rs=1&pid=ImgDetMain" width="150px" alt="">
+            <p id="accountDetails">No account created yet.</p>
+        </div>
+    </div>
+    
+    <script src="SimpleBankingApplication.js"></script>
+
+</body>
+</html>
